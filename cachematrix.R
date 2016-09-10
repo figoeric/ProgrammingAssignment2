@@ -1,7 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## Use 'makeCacheMatrix' function to change a regular matrix 
+## into one that is able to cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
@@ -18,7 +19,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Use 'cacheSolve' to return a inverse of a matrix. If there is already 
+## a inverse in the cache, use the data in the cache. Otherwise calculate the inverse
+## and save it in the cache.
+
+## Noted the matrix must be treated by the 'makeCacheMatrix' function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
